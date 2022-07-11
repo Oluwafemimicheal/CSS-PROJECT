@@ -1,0 +1,66 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: url(https://picsum.photos/200/300/?blur=2) no-repeat;
+    background-size: cover;
+}
+.container{
+    width: 80%;
+    height: 3px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-end;
+    min-height: 90vh;
+    border-bottom: 6px solid white;
+}
+
+.ball{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin: 10px;
+    overflow: hidden;
+    animation: ball 3s infinite ease;
+}
+.ball:nth-child(1){
+    animation-delay: 1s;
+}
+.ball:nth-child(2){
+    animation-delay: 2s;
+}
+.ball:nth-child(3){
+    animation-delay: 3s;
+}
+.ball:nth-child(4){
+    animation-delay: 4s;
+}
+.ball:nth-child(5){
+    animation-delay: 5s;
+}
+.ball:nth-child(6){
+    animation-delay: 6s;
+}
+.ball:nth-child(7){
+    animation-delay: 7s;
+}
+
+@keyframes ball {
+    0%{
+        transform: translate(0%);
+    }
+    70%{
+        opacity: 0.9;
+    }
+    100%{
+        transform: translateY(-450%);
+        opacity: 0;
+    }
+}
