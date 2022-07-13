@@ -1,0 +1,92 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: black;
+}
+
+.container{
+    position: relative;
+    width: 600px;
+    height: 500px;
+    border-left: 5px solid orange;
+    border-bottom: 5px solid orange;
+    overflow: hidden;
+}
+span{
+    position: absolute;
+    bottom: 0;
+    width: 40px;
+    height: 60px;
+    margin: 0 40px;
+    text-align: center;
+    background-color: white;
+    animation: chart 10s infinite linear ;
+    
+}
+span h1{
+    position: absolute;
+    top: -39px;
+    font-size: 20px;
+    color: white;
+    transform: rotate(30deg);
+    animation: num 10s infinite linear;
+}
+@keyframes num {
+    0%{
+        transform: rotate(0deg);
+        opacity: 0;
+    }
+    100%{
+        transform: rotate(40deg);
+        color: rgb(53, 214, 53);
+        opacity: 1;
+    }
+}
+span:nth-child(2){
+    left: 10%;
+    margin: 0 60px;
+    height: 200px;
+}
+span:nth-child(3){
+    left: 20%;
+    margin: 0 80px;
+    height: 260px;
+}
+span:nth-child(4){
+    left: 30%;
+    margin: 0 100px;
+    height: 400px;
+}
+span:nth-child(5){
+    left: 40%;
+    margin: 0 120px;
+    height: 150px;
+}
+span:nth-child(6){
+    left: 50%;
+    margin: 0 140px;
+    height: 470px;
+}
+span:nth-child(7){
+    left: 60%;
+    height: 180px;
+    margin: 0 160px;
+}
+
+@keyframes chart {
+    0%{
+        transform: translateY(100%);
+    }
+
+    100%{
+        transform:  translateY(10%);
+        background-color: rgb(53, 214, 53);
+    }
+}
