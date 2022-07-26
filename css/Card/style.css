@@ -1,23 +1,25 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-body{
+
+body {
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
 }
-.container{
+
+.container {
     width: 80%;
     margin: auto;
     display: flex;
     justify-content: center;
     align-items: center;
-
 }
-.card{
+
+.card {
     max-width: 300px;
     height: 350px;
     background-color: bisque;
@@ -28,9 +30,14 @@ body{
     align-items: center;
     flex-direction: column;
     border-radius: 10px;
-    box-shadow:0px 0px 10px 0px  rgba(41, 40, 40, 0.79);
+    transition: .3s ease;
 }
-.card .imgbx{
+
+.card:hover {
+    box-shadow: 0px 0px 4px 0px rgba(41, 40, 40, 0.79);
+}
+
+.card .imgbx {
     width: 100%;
     height: 250px;
     overflow: hidden;
@@ -42,26 +49,32 @@ body{
     transition: all .4s ease;
     transform: translateY(-30%);
 }
-.card::after{
+
+.card::after {
     width: 320px;
     height: auto;
 }
-.card .imgbx .show{
+
+.card .imgbx .show {
     display: flex;
 }
 
-.card .text{
-   transform: translateY(-20px);
+.card .text {
+    transform: translateY(-20px);
 }
-.card .text h1{
+
+.card .text h1 {
     color: rgb(57, 57, 57);
 }
-.card .text p{
- color: rgb(120, 22, 22);
+
+.card .text p {
+    color: rgb(120, 22, 22);
 }
-.imgbx img{
+
+.imgbx img {
     transition: all .5s ease;
 }
-.imgbx img:hover{
+
+.imgbx img:hover {
     transform: scale(1.2);
 }
